@@ -1,3 +1,5 @@
+vim.cmd('set linebreak')
+
 vim.cmd('set autoindent')
 vim.cmd('set expandtab')
 vim.cmd('set tabstop=4')
