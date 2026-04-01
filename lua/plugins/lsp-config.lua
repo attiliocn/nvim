@@ -23,11 +23,10 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            local lspconfig = require('lspconfig')
-            lspconfig.lua_ls.setup({})
-            lspconfig.marksman.setup({})
-            lspconfig.bashls.setup({})
-            lspconfig.pyright.setup({})
+            vim.lsp.enable('lua_ls')
+            vim.lsp.enable('marksman')
+            vim.lsp.enable('bashls')
+            vim.lsp.enable('pyright')
         end
     }
 }
